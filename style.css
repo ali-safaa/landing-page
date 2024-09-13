@@ -1,0 +1,431 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Public Sans", sans-serif;
+}
+
+header {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: white;
+     padding: 20px 0;
+     position: relative;
+     z-index: 1;
+}
+
+ul {
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+}
+
+nav li {
+     color: #74898e;
+     font-weight: 500;
+     margin-right: 20px;
+     cursor: pointer;
+}
+
+.request-invite {
+     border: none;
+     background-image: linear-gradient(
+          to right,
+          hsl(136, 65%, 51%),
+          hsl(192, 70%, 51%)
+     );
+     border-radius: 25px;
+     padding: 10px 25px;
+     font-weight: 500;
+     color: white;
+     cursor: pointer;
+}
+
+.banner {
+     display: grid;
+     align-items: center;
+     background-color: hsl(0, 0%, 98%);
+     position: relative;
+     padding: 110px 0;
+     padding-left: 130px;
+}
+
+.banner > h1 {
+     font-weight: 300;
+     width: 400px;
+     padding-bottom: 20px;
+     color: hsl(233, 26%, 24%);
+     font-size: 50px;
+}
+
+.banner > p {
+     color: #74898e;
+     font-weight: 500;
+     width: 400px;
+     padding-bottom: 40px;
+     line-height: 1.5;
+}
+
+.banner > button {
+     border: none;
+     background-image: linear-gradient(
+          to right,
+          hsl(136, 65%, 51%),
+          hsl(192, 70%, 51%)
+     );
+     border-radius: 25px;
+     padding: 10px 25px;
+     font-weight: 500;
+     color: white;
+     width: fit-content;
+     cursor: pointer;
+}
+
+.banner > svg {
+     position: absolute;
+     top: -180px;
+     left: 900px;
+}
+
+.banner > img {
+     position: absolute;
+     top: -120px;
+     left: 1190px;
+     width: 700px;
+}
+
+.feed-container {
+     display: grid;
+     align-items: center;
+     background-color: hsl(220, 16%, 96%);
+     position: relative;
+     z-index: -1;
+     padding: 100px 150px;
+}
+
+.feed-container > p {
+     color: #74898e;
+     font-weight: 500;
+     padding-top: 20px;
+     padding-bottom: 100px;
+     width: 500px;
+     line-height: 1.5;
+}
+
+.feed-container > h3 {
+     font-size: 30px;
+     font-weight: 300;
+}
+
+.features-container {
+     display: flex;
+     align-items: center;
+}
+
+.features-container div {
+     display: grid;
+     align-items: center;
+     padding-right: 100px;
+}
+
+.features-container svg {
+     padding-bottom: 25px;
+}
+
+.features-container h4 {
+     padding-bottom: 15px;
+}
+
+.features-container p {
+     line-height: 1.5;
+     color: #74898e;
+     width: 250px;
+}
+
+.container-articles {
+     display: grid;
+     align-items: center;
+     padding: 80px 0;
+     background-color: hsl(0, 0%, 98%);
+     justify-content: center;
+}
+
+.container-articles > h2 {
+     color: hsl(233, 26%, 24%);
+     font-weight: 400;
+     padding-bottom: 45px;
+     font-size: 30px;
+}
+
+.cards {
+     display: flex;
+     align-items: center;
+}
+
+.cards div {
+     width: fit-content;
+     background-color: white;
+     margin-right: 30px;
+     border-radius: 0 0 10px 10px;
+}
+
+.cards img {
+     width: 290px;
+     height: 200px;
+     border-radius: 10px 10px 0 0;
+}
+
+.cards h3 {
+     width: 200px;
+     font-weight: 400;
+     padding-bottom: 10px;
+     padding-left: 20px;
+}
+
+.cards h5 {
+     padding-top: 30px;
+     padding-bottom: 10px;
+     color: #74898e;
+     padding-left: 20px;
+}
+.cards p {
+     width: 230px;
+     color: #74898e;
+     padding-left: 20px;
+     padding-right: 40px;
+     line-height: 1.5;
+     padding-bottom: 30px;
+}
+
+footer {
+     display: flex;
+     align-items: center;
+     background-color: hsl(233, 26%, 24%);
+     padding: 40px 0;
+     padding-left: 300px;
+}
+
+.logo-socialMedia {
+     display: grid;
+     align-items: center;
+     padding-right: 70px;
+}
+
+.socialMedia {
+     display: flex;
+     align-items: center;
+}
+.logo-socialMedia .socialMedia {
+     margin-right: 10px;
+     margin-top: 40px;
+}
+
+.findMe {
+     display: grid;
+     align-items: center;
+     padding-right: 150px;
+     color: #fff;
+}
+
+.findMe > h3 {
+     font-weight: 400;
+     margin-top: 5px;
+     color: hsl(233, 8%, 62%);
+     cursor: pointer;
+}
+
+.jobs {
+     display: grid;
+     align-items: center;
+     color: #fff;
+     padding-right: 150px;
+}
+
+.jobs > h3 {
+     font-weight: 400;
+     margin-top: 5px;
+     color: hsl(233, 8%, 62%);
+     cursor: pointer;
+}
+
+.button-copyright {
+     display: grid;
+     align-items: center;
+     margin-left: 300px;
+}
+
+.button-copyright > button {
+     border: none;
+     background-image: linear-gradient(
+          to right,
+          hsl(136, 65%, 51%),
+          hsl(192, 70%, 51%)
+     );
+     border-radius: 25px;
+     padding: 10px 25px;
+     font-weight: 500;
+     color: white;
+     width: fit-content;
+     margin-bottom: 20px;
+     cursor: pointer;
+}
+
+.button-copyright > p {
+     color: hsl(233, 8%, 62%);
+}
+
+.socialMedia svg {
+     margin-right: 10px;
+     cursor: pointer;
+}
+
+.attribution {
+     margin-top: 20px;
+     color: hsl(233, 8%, 62%);
+}
+
+.attribution a {
+     color: hsl(233, 8%, 62%);
+}
+
+@media only screen and (max-width: 600px) {
+     .attribution {
+          margin: 20px auto;
+     }
+
+     .banner {
+          padding-top: 600px;
+          padding-left: 0;
+
+          justify-content: center;
+     }
+     .banner > svg {
+          width: 800px;
+          height: 800px;
+          position: absolute;
+          left: -100px;
+          top: -200px;
+     }
+
+     .banner > img {
+          width: 400px;
+          left: 100px;
+          top: 40px;
+     }
+
+     .banner > h1 {
+          font-size: 40px;
+          margin: 0 auto;
+          text-align: center;
+     }
+
+     .banner > button {
+          margin: 0 auto;
+     }
+
+     ul {
+          display: none;
+     }
+
+     .request-invite {
+          display: none;
+     }
+
+     .feed-container {
+          padding: 100px 0;
+          justify-content: center;
+     }
+
+     .features-container {
+          display: grid;
+          align-items: center;
+     }
+
+     .feed-container > h3 {
+          text-align: center;
+     }
+
+     .feed-container > p {
+          text-align: center;
+     }
+
+     .features-container div {
+          margin: 0 auto;
+          padding-right: 0;
+          padding-bottom: 50px;
+     }
+
+     .features-container svg {
+          margin: 0 auto;
+     }
+
+     .features-container h4 {
+          text-align: center;
+     }
+
+     .features-container p {
+          text-align: center;
+          width: 350px;
+     }
+     header {
+          justify-content: space-between;
+     }
+     header > svg {
+          margin-left: 30px;
+     }
+     nav > svg {
+          margin-right: 30px;
+     }
+
+     .cards {
+          display: grid;
+          align-items: center;
+     }
+
+     .container-articles > h2 {
+          text-align: center;
+     }
+     .cards div {
+          margin-right: 0;
+          margin-bottom: 40px;
+     }
+
+     footer {
+          display: grid;
+          align-items: center;
+          padding-left: 0;
+          justify-content: center;
+     }
+
+     .logo-socialMedia {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .logo-socialMedia svg {
+          margin: 0 auto;
+     }
+
+     .findMe {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .jobs {
+          padding-right: 0;
+          justify-content: center;
+     }
+     .jobs h3 {
+          text-align: center;
+     }
+     .findMe h3 {
+          text-align: center;
+     }
+     footer > .button-copyright {
+          margin: 0 auto;
+     }
+
+     .button-copyright > button {
+          margin: 20px auto;
+     }
+}
