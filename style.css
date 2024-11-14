@@ -291,7 +291,7 @@ footer {
      color: hsl(233, 8%, 62%);
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 320px) {
      .attribution {
           margin: 20px auto;
      }
@@ -303,16 +303,16 @@ footer {
           justify-content: center;
      }
      .banner > svg {
-          width: 800px;
+          width: 400px;
           height: 800px;
           position: absolute;
-          left: -100px;
-          top: -200px;
+          left: -35px;
+          top: -175px;
      }
 
      .banner > img {
-          width: 400px;
-          left: 100px;
+          width: 300px;
+          left: 8px;
           top: 40px;
      }
 
@@ -320,6 +320,11 @@ footer {
           font-size: 40px;
           margin: 0 auto;
           text-align: center;
+     }
+
+     .banner > p {
+          width: 300px;
+          margin: 0 auto;
      }
 
      .banner > button {
@@ -346,10 +351,12 @@ footer {
 
      .feed-container > h3 {
           text-align: center;
+          font-size: 25px;
      }
 
      .feed-container > p {
-          text-align: center;
+          width: 300px;
+          margin: 0 auto;
      }
 
      .features-container div {
@@ -368,7 +375,7 @@ footer {
 
      .features-container p {
           text-align: center;
-          width: 350px;
+          width: 316px;
      }
      header {
           justify-content: space-between;
@@ -432,4 +439,156 @@ footer {
      .button-copyright > button {
           margin: 20px auto;
      }
+}
+
+
+@media (min-width: 321px) and (max-width: 480px){
+     .attribution {
+          margin: 20px auto;
+     }
+
+     .banner {
+          padding-top: 600px;
+          padding-left: 0;
+
+          justify-content: center;
+     }
+     .banner > svg {
+          width: 400px;
+          height: 800px;
+          position: absolute;
+          left: -35px;
+          top: -175px;
+     }
+
+     .banner > img {
+          width: 300px;
+          left: 8px;
+          top: 40px;
+     }
+
+     .banner > h1 {
+          font-size: 40px;
+          margin: 0 auto;
+          text-align: center;
+     }
+
+     .banner > p {
+          width: 300px;
+          margin: 0 auto;
+     }
+
+     .banner > button {
+          margin: 0 auto;
+     }
+
+     ul {
+          display: none;
+     }
+
+     .request-invite {
+          display: none;
+     }
+
+     .feed-container {
+          padding: 100px 0;
+          justify-content: center;
+     }
+
+     .features-container {
+          display: grid;
+          align-items: center;
+     }
+
+     .feed-container > h3 {
+          text-align: center;
+          font-size: 25px;
+     }
+
+     .feed-container > p {
+          width: 300px;
+          margin: 0 auto;
+     }
+
+     .features-container div {
+          margin: 0 auto;
+          padding-right: 0;
+          padding-bottom: 50px;
+     }
+
+     .features-container svg {
+          margin: 0 auto;
+     }
+
+     .features-container h4 {
+          text-align: center;
+     }
+
+     .features-container p {
+          text-align: center;
+          width: 316px;
+     }
+     header {
+          justify-content: space-between;
+     }
+     header > svg {
+          margin-left: 30px;
+     }
+     nav > svg {
+          margin-right: 30px;
+          display: block;
+     }
+
+     .cards {
+          display: grid;
+          align-items: center;
+     }
+
+     .container-articles > h2 {
+          text-align: center;
+     }
+     .cards div {
+          margin-right: 0;
+          margin-bottom: 40px;
+     }
+
+     footer {
+          display: grid;
+          align-items: center;
+          padding-left: 0;
+          justify-content: center;
+     }
+
+     .logo-socialMedia {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .logo-socialMedia svg {
+          margin: 0 auto;
+     }
+
+     .findMe {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .jobs {
+          padding-right: 0;
+          justify-content: center;
+     }
+     .jobs h3 {
+          text-align: center;
+     }
+     .findMe h3 {
+          text-align: center;
+     }
+     footer > .button-copyright {
+          margin: 0 auto;
+     }
+
+     .button-copyright > button {
+          margin: 20px auto;
+     }
+}
 }
