@@ -441,8 +441,7 @@ footer {
      }
 }
 
-
-@media (min-width: 321px) and (max-width: 480px){
+@media (min-width: 321px) and (max-width: 480px) {
      .attribution {
           margin: 20px auto;
      }
@@ -590,5 +589,4 @@ footer {
      .button-copyright > button {
           margin: 20px auto;
      }
-}
 }
