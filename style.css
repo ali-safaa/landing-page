@@ -45,15 +45,20 @@ nav li {
 }
 
 .banner {
-     display: grid;
+     display: flex;
      align-items: center;
      background-color: hsl(0, 0%, 98%);
      position: relative;
-     padding: 110px 0;
-     padding-left: 130px;
+     padding: 100px 0;
+     padding-left: 50px;
 }
 
-.banner > h1 {
+title {
+     display: grid;
+     align-items: center;
+}
+
+.title > h1 {
      font-weight: 300;
      width: 400px;
      padding-bottom: 20px;
@@ -61,7 +66,7 @@ nav li {
      font-size: 50px;
 }
 
-.banner > p {
+.title > p {
      color: #74898e;
      font-weight: 500;
      width: 400px;
@@ -69,7 +74,7 @@ nav li {
      line-height: 1.5;
 }
 
-.banner > button {
+.title > button {
      border: none;
      background-image: linear-gradient(
           to right,
@@ -86,15 +91,12 @@ nav li {
 
 .banner > svg {
      position: absolute;
-     top: -180px;
      left: 900px;
 }
 
 .banner > img {
      position: absolute;
-     top: -120px;
-     left: 1190px;
-     width: 700px;
+     left: 1000px;
 }
 
 .feed-container {
@@ -291,7 +293,7 @@ footer {
      color: hsl(233, 8%, 62%);
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
      .attribution {
           margin: 20px auto;
      }
@@ -439,9 +441,9 @@ footer {
      .button-copyright > button {
           margin: 20px auto;
      }
-}
+} */
 
-@media (min-width: 321px) and (max-width: 480px) {
+/* @media (min-width: 321px) and (max-width: 480px) {
      .attribution {
           margin: 20px auto;
      }
@@ -588,5 +590,35 @@ footer {
 
      .button-copyright > button {
           margin: 20px auto;
+     }
+} */
+
+@media (min-width: 320px) and (max-width: 480px) {
+     .banner {
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 0;
+     }
+
+     .banner > svg {
+          position: absolute;
+          top: -400px;
+          left: -90px;
+          width: 600px;
+     }
+
+     .banner > img {
+          position: relative;
+          top: 0;
+          left: -12px;
+          max-width: 500px;
+          width: 100%;
+          height: auto;
+     }
+
+     title {
+          display: grid;
+          align-items: center;
+          justify-content: center;
      }
 }
