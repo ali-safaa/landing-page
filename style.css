@@ -44,37 +44,41 @@ nav li {
      cursor: pointer;
 }
 
-.banner {
+.sec-1 {
      display: flex;
-     align-items: center;
+     align-items: start;
+     justify-content: space-between;
      background-color: hsl(0, 0%, 98%);
-     position: relative;
-     padding: 100px 0;
      padding-left: 50px;
+     height: 700px;
 }
 
-title {
-     display: grid;
-     align-items: center;
+.hero-info {
+     display: flex;
+     align-items: start;
+     flex-direction: column;
+     max-width: 100%;
 }
 
-.title > h1 {
+.hero-info > h1 {
      font-weight: 300;
-     width: 400px;
+     width: 100%;
+     max-width: 700px;
      padding-bottom: 20px;
+     padding-top: 200px;
      color: hsl(233, 26%, 24%);
-     font-size: 50px;
+     font-size: 70px;
 }
 
-.title > p {
+.hero-info > p {
      color: #74898e;
      font-weight: 500;
-     width: 400px;
      padding-bottom: 40px;
      line-height: 1.5;
+     max-width: 400px;
 }
 
-.title > button {
+.hero-info > button {
      border: none;
      background-image: linear-gradient(
           to right,
@@ -85,18 +89,22 @@ title {
      padding: 10px 25px;
      font-weight: 500;
      color: white;
-     width: fit-content;
      cursor: pointer;
 }
 
-.banner > svg {
-     position: absolute;
-     left: 900px;
+.hero-img {
+     background-image: url("/images/bg-intro-desktop.svg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: top left;
+     position: relative;
+     top: -100px;
+     right: 0;
 }
 
-.banner > img {
-     position: absolute;
-     left: 1000px;
+.hero-img > img {
+     max-width: 100%;
 }
 
 .feed-container {
@@ -105,19 +113,20 @@ title {
      background-color: hsl(220, 16%, 96%);
      position: relative;
      z-index: -1;
-     padding: 100px 150px;
 }
 
-.feed-container > p {
+.feed-info {
+     padding: 70px 70px;
+}
+
+.feed-info > p {
      color: #74898e;
      font-weight: 500;
-     padding-top: 20px;
-     padding-bottom: 100px;
      width: 500px;
      line-height: 1.5;
 }
 
-.feed-container > h3 {
+.feed-info > h3 {
      font-size: 30px;
      font-weight: 300;
 }
@@ -125,12 +134,15 @@ title {
 .features-container {
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
+     margin: 0 70px;
+     margin-bottom: 40px;
 }
 
 .features-container div {
      display: grid;
      align-items: center;
-     padding-right: 100px;
+     margin-right: 100px;
 }
 
 .features-container svg {
@@ -293,332 +305,19 @@ footer {
      color: hsl(233, 8%, 62%);
 }
 
-/* @media (max-width: 320px) {
-     .attribution {
-          margin: 20px auto;
-     }
-
-     .banner {
-          padding-top: 600px;
-          padding-left: 0;
-
-          justify-content: center;
-     }
-     .banner > svg {
-          width: 400px;
-          height: 800px;
-          position: absolute;
-          left: -35px;
-          top: -175px;
-     }
-
-     .banner > img {
-          width: 300px;
-          left: 8px;
-          top: 40px;
-     }
-
-     .banner > h1 {
-          font-size: 40px;
-          margin: 0 auto;
-          text-align: center;
-     }
-
-     .banner > p {
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .banner > button {
-          margin: 0 auto;
-     }
-
-     ul {
-          display: none;
-     }
-
-     .request-invite {
-          display: none;
-     }
-
-     .feed-container {
-          padding: 100px 0;
-          justify-content: center;
-     }
-
+@media (min-width: 320px) and (max-width: 839px) {
      .features-container {
-          display: grid;
-          align-items: center;
-     }
-
-     .feed-container > h3 {
-          text-align: center;
-          font-size: 25px;
-     }
-
-     .feed-container > p {
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .features-container div {
-          margin: 0 auto;
-          padding-right: 0;
-          padding-bottom: 50px;
-     }
-
-     .features-container svg {
-          margin: 0 auto;
-     }
-
-     .features-container h4 {
-          text-align: center;
-     }
-
-     .features-container p {
-          text-align: center;
-          width: 316px;
-     }
-     header {
-          justify-content: space-between;
-     }
-     header > svg {
-          margin-left: 30px;
-     }
-     nav > svg {
-          margin-right: 30px;
-          display: block;
-     }
-
-     .cards {
-          display: grid;
-          align-items: center;
-     }
-
-     .container-articles > h2 {
-          text-align: center;
-     }
-     .cards div {
-          margin-right: 0;
-          margin-bottom: 40px;
-     }
-
-     footer {
-          display: grid;
-          align-items: center;
-          padding-left: 0;
-          justify-content: center;
-     }
-
-     .logo-socialMedia {
-          padding-right: 0;
-          justify-content: center;
-     }
-
-     .logo-socialMedia svg {
-          margin: 0 auto;
-     }
-
-     .findMe {
-          padding-right: 0;
-          justify-content: center;
-     }
-
-     .jobs {
-          padding-right: 0;
-          justify-content: center;
-     }
-     .jobs h3 {
-          text-align: center;
-     }
-     .findMe h3 {
-          text-align: center;
-     }
-     footer > .button-copyright {
-          margin: 0 auto;
-     }
-
-     .button-copyright > button {
-          margin: 20px auto;
-     }
-} */
-
-/* @media (min-width: 321px) and (max-width: 480px) {
-     .attribution {
-          margin: 20px auto;
-     }
-
-     .banner {
-          padding-top: 600px;
-          padding-left: 0;
-
-          justify-content: center;
-     }
-     .banner > svg {
-          width: 400px;
-          height: 800px;
-          position: absolute;
-          left: -35px;
-          top: -175px;
-     }
-
-     .banner > img {
-          width: 300px;
-          left: 8px;
-          top: 40px;
-     }
-
-     .banner > h1 {
-          font-size: 40px;
-          margin: 0 auto;
-          text-align: center;
-     }
-
-     .banner > p {
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .banner > button {
-          margin: 0 auto;
-     }
-
-     ul {
-          display: none;
-     }
-
-     .request-invite {
-          display: none;
-     }
-
-     .feed-container {
-          padding: 100px 0;
-          justify-content: center;
-     }
-
-     .features-container {
-          display: grid;
-          align-items: center;
-     }
-
-     .feed-container > h3 {
-          text-align: center;
-          font-size: 25px;
-     }
-
-     .feed-container > p {
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .features-container div {
-          margin: 0 auto;
-          padding-right: 0;
-          padding-bottom: 50px;
-     }
-
-     .features-container svg {
-          margin: 0 auto;
-     }
-
-     .features-container h4 {
-          text-align: center;
-     }
-
-     .features-container p {
-          text-align: center;
-          width: 316px;
-     }
-     header {
-          justify-content: space-between;
-     }
-     header > svg {
-          margin-left: 30px;
-     }
-     nav > svg {
-          margin-right: 30px;
-          display: block;
-     }
-
-     .cards {
-          display: grid;
-          align-items: center;
-     }
-
-     .container-articles > h2 {
-          text-align: center;
-     }
-     .cards div {
-          margin-right: 0;
-          margin-bottom: 40px;
-     }
-
-     footer {
-          display: grid;
-          align-items: center;
-          padding-left: 0;
-          justify-content: center;
-     }
-
-     .logo-socialMedia {
-          padding-right: 0;
-          justify-content: center;
-     }
-
-     .logo-socialMedia svg {
-          margin: 0 auto;
-     }
-
-     .findMe {
-          padding-right: 0;
-          justify-content: center;
-     }
-
-     .jobs {
-          padding-right: 0;
-          justify-content: center;
-     }
-     .jobs h3 {
-          text-align: center;
-     }
-     .findMe h3 {
-          text-align: center;
-     }
-     footer > .button-copyright {
-          margin: 0 auto;
-     }
-
-     .button-copyright > button {
-          margin: 20px auto;
-     }
-} */
-
-@media (min-width: 320px) and (max-width: 480px) {
-     .banner {
+          flex-wrap: nowrap;
           display: flex;
-          flex-direction: column-reverse;
-          padding: 0;
+          flex-direction: column;
+          margin: 0;
+     }
+     .features-container div {
+          margin: 0 auto;
+          margin-top: 20px;
      }
 
-     .banner > svg {
-          position: absolute;
-          top: -400px;
-          left: -90px;
-          width: 600px;
-     }
-
-     .banner > img {
-          position: relative;
-          top: 0;
-          left: -12px;
-          max-width: 500px;
-          width: 100%;
-          height: auto;
-     }
-
-     title {
-          display: grid;
-          align-items: center;
-          justify-content: center;
+     .features-container div svg {
+          width: 400px;
      }
 }
