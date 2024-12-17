@@ -2,7 +2,6 @@
      margin: 0;
      padding: 0;
      font-family: "Public Sans", sans-serif;
-     box-sizing: inherit;
 }
 
 header {
@@ -14,7 +13,19 @@ header {
      position: relative;
      z-index: 1;
 }
-nav > svg {
+.nav-desktop > svg {
+     display: none;
+}
+
+header > .hamburger-icon {
+     display: none;
+}
+
+.container-nav > .nav-mobile {
+     display: none;
+}
+
+.container-nav > h1 {
      display: none;
 }
 
@@ -24,7 +35,7 @@ ul {
      align-items: center;
 }
 
-nav li {
+.nav-desktop li {
      color: #74898e;
      font-weight: 500;
      margin-right: 20px;
@@ -309,6 +320,99 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 839px) {
+     header {
+          justify-content: space-between;
+          padding: 30px;
+          position: relative;
+     }
+
+     .nav-desktop {
+          display: none;
+     }
+
+     header > .hamburger-icon {
+          display: block;
+     }
+
+     .container-nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: -800px;
+          background-color: rgba(0, 0, 0, 0.5);
+          text-align: right;
+          display: none;
+     }
+
+     .container-nav > .nav-mobile {
+          background-color: white;
+          max-width: 100%;
+          margin: 0 20px;
+          padding-bottom: 20px;
+          position: relative;
+          top: 50px;
+          border-radius: 10px;
+          display: block;
+     }
+     .container-nav > h1 {
+          color: white;
+          display: inline-flex;
+          position: relative;
+          top: 30px;
+          right: 20px;
+     }
+
+     ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .nav-mobile li {
+          color: #74898e;
+          font-weight: 500;
+          margin-top: 22px;
+          font-size: 18px;
+          cursor: pointer;
+     }
+
+     header > .hamburger {
+          cursor: pointer;
+          display: block;
+     }
+
+     header > button {
+          display: none;
+     }
+
+     .sec-1 {
+          display: flex;
+          flex-direction: column-reverse;
+     }
+
+     .hero-info > h1 {
+          font-size: 50px;
+          text-align: center;
+     }
+
+     .hero-info > p {
+          margin: 0 auto;
+          padding: 0;
+          margin-bottom: 40px;
+     }
+
+     .hero-info > button {
+          margin: 0 auto;
+          margin-bottom: 20px;
+     }
+
+     .hero-img {
+          background-image: url("/images/bg-intro-mobile.svg");
+          top: 200px;
+     }
+
      .feed-info > h3 {
           text-align: center;
           margin: 0;
@@ -380,5 +484,9 @@ footer {
 
      .button-copyright > button {
           margin: 20px auto;
+     }
+
+     .button-copy-right {
+          margin: 0;
      }
 }

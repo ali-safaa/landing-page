@@ -25,7 +25,12 @@
      </head>
      <body>
           <header>
-               <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+               <svg
+                    class="logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="139"
+                    height="20"
+               >
                     <defs>
                          <linearGradient
                               id="a"
@@ -57,7 +62,7 @@
                          </g>
                     </g>
                </svg>
-               <nav>
+               <nav class="nav-desktop">
                     <ul>
                          <li>Home</li>
                          <li>About</li>
@@ -65,16 +70,30 @@
                          <li>Blog</li>
                          <li>Careers</li>
                     </ul>
-                    <svg
-                         xmlns="http://www.w3.org/2000/svg"
-                         width="24"
-                         height="11"
-                    >
-                         <g fill="#2D314D" fill-rule="evenodd">
-                              <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
-                         </g>
-                    </svg>
                </nav>
+               <svg
+                    data-hamburger-icon
+                    class="hamburger-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="11"
+               >
+                    <g fill="#2D314D" fill-rule="evenodd">
+                         <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
+                    </g>
+               </svg>
+               <div data-container-nav class="container-nav">
+                    <h1 data-close-icon>X</h1>
+                    <nav class="nav-mobile">
+                         <ul>
+                              <li>Home</li>
+                              <li>About</li>
+                              <li>Content</li>
+                              <li>Blog</li>
+                              <li>Careers</li>
+                         </ul>
+                    </nav>
+               </div>
                <button class="request-invite">Request Invite</button>
           </header>
 
@@ -102,6 +121,7 @@
                          before.
                     </p>
                </div>
+
                <div class="features-container">
                     <div class="feature-one">
                          <svg
@@ -460,5 +480,6 @@
                     <p>© Easybank. All Rights Reserved</p>
                </div>
           </footer>
+          <script src="script.js"></script>
      </body>
 </html>
