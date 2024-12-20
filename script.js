@@ -4,10 +4,14 @@ const container_nav = document.querySelector("[data-container-nav]");
 
 close_icon.addEventListener("click", () => {
      container_nav.style.display = "none";
-     // hamburger_icon.style.display = "block";
+     if (window.innerWidth <= 840) {
+          hamburger_icon.style.display = "block";
+     }
 });
 
 hamburger_icon.addEventListener("click", () => {
      container_nav.style.display = "block";
-     hamburger_icon.style.display = "none";
+     if (window.innerWidth <= 840) {
+          hamburger_icon.style.display = "none";
+     }
 });
