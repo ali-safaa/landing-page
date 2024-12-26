@@ -324,6 +324,55 @@ footer {
      color: hsl(233, 8%, 62%);
 }
 
+@media (min-width: 840px) and (max-width: 1510px) {
+     .container-articles > h2 {
+          text-align: center;
+     }
+
+     .cards {
+          justify-content: center;
+     }
+
+     footer {
+          display: grid;
+          justify-content: center;
+     }
+
+     .logo-socialMedia {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .logo-socialMedia > svg {
+          display: block;
+          margin: auto;
+     }
+     .logo-socialMedia > .socialMedia {
+          margin-right: 0;
+          margin: 0 auto;
+     }
+
+     .findMe {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .jobs {
+          padding-right: 0;
+          justify-content: center;
+     }
+
+     .button-copyright {
+          margin-left: 0;
+          margin-top: 30px;
+     }
+
+     .button-copyright > button {
+          margin: 0 auto;
+          margin-bottom: 20px;
+     }
+}
+
 @media (min-width: 320px) and (max-width: 839px) {
      header {
           justify-content: space-between;
@@ -473,7 +522,7 @@ footer {
      }
 
      .findMe {
-          margin: 20px auto;
+          margin: 0auto;
           padding: 0;
      }
 
@@ -492,21 +541,5 @@ footer {
 
      .button-copy-right {
           margin: 0;
-     }
-}
-
-@media (min-width: 840px) and (max-width: 1510px) {
-     footer {
-          display: grid;
-          justify-content: center;
-     }
-
-     .findMe {
-          margin: 20px 0;
-     }
-
-     .button-copyright {
-          margin-left: 0;
-          margin-top: 30px;
      }
 }
