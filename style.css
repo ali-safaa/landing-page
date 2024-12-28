@@ -325,6 +325,14 @@ footer {
 }
 
 @media (min-width: 840px) and (max-width: 1510px) {
+     .sec-1 {
+          padding-left: 0;
+     }
+
+     .features-container {
+          margin: 0;
+     }
+
      .container-articles > h2 {
           text-align: center;
      }
@@ -336,6 +344,7 @@ footer {
      footer {
           display: grid;
           justify-content: center;
+          padding-left: 0;
      }
 
      .logo-socialMedia {
@@ -444,6 +453,7 @@ footer {
      .sec-1 {
           display: flex;
           flex-direction: column-reverse;
+          padding-left: 0;
      }
 
      .hero-info > h1 {
@@ -482,6 +492,7 @@ footer {
           display: flex;
           flex-direction: column;
           padding: 0;
+          margin: 0;
      }
      .features-container div {
           margin: 0 auto;
@@ -506,6 +517,10 @@ footer {
 
      .cards {
           justify-content: center;
+     }
+
+     .cards div {
+          margin-right: 0;
      }
 
      footer {
